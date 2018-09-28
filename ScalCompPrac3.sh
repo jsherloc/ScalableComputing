@@ -9,4 +9,5 @@ echo "Install John The Ripper Repo...";
 cd ..
 git clone git://github.com/magnumripper/JohnTheRipper -b bleeding-jumbo john
 echo "Compile John The Ripper..."
+cd john/src
 ./configure && make -s clean && make -sj4
